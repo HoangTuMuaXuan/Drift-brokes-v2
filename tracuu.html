@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tra cứu Môi giới - Drift Brokers</title>
+    <!-- Lệnh này cũng kết nối trang tra cứu với tệp màu sắc style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- THANH MENU (Giống hệt trang chủ để giữ sự liền mạch) -->
+    <header class="navbar">
+        <div class="logo">DRIFT BROKERS</div>
+        <nav>
+            <ul class="nav-links">
+                <!-- Chú ý: Nút này cho phép quay lại trang chủ -->
+                <li><a href="index.html" class="btn-outline">Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="#">Top sàn ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Sàn Ngoại Hối (Forex)</a></li>
+                        <li><a href="#">Quỹ Cấp Vốn (Prop Firm)</a></li>
+                        <li><a href="#">Sàn Tiền Điện Tử (Crypto)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">So sánh</a></li>
+                <li><a href="#">Cộng đồng</a></li>
+                <li><a href="#">Kiến thức</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn-login">ĐĂNG NHẬP</a>
+        <button id="btn-doi-mau" class="theme-btn" title="Chuyển đổi giao diện">🌙</button>
+    </header>
+
+    <!-- BANNER TÌM KIẾM -->
+    <section class="search-banner">
+        <h2>TRA CỨU MỌI THÔNG TIN VỀ NHÀ MÔI GIỚI</h2>
+        <div class="search-box">
+            <input type="text" placeholder="Nhập tên sàn giao dịch hoặc quỹ cấp vốn...">
+            <button>Tìm kiếm</button>
+        </div>
+    </section>
+
+    <!-- DANH SÁCH LƯỚI 3 CỘT -->
+    <section class="broker-list-section">
+        <div class="section-header">
+            <h3>TẤT CẢ CÁC NHÀ MÔI GIỚI & QUỸ CẤP VỐN</h3>
+            <div class="sort-box">
+                <span>Sắp xếp theo:</span>
+                <select class="neon-select">
+                    <option>Điểm giảm dần</option>
+                    <option>Lượt đánh giá cao</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="broker-grid">
+            <!-- Thẻ 1 -->
+            <div class="neon-card">
+                <div class="card-top">
+                    <h4 class="broker-name-large">FTMO</h4>
+                    <div class="rating-badge">9.5 ★</div>
+                </div>
+                <div class="card-body">
+                    <p><strong>Loại hình:</strong> Quỹ Cấp Vốn (Prop Firm)</p>
+                    <p><strong>Đòn bẩy:</strong> 1:100</p>
+                    <p class="verified-tag">✓ Đã thẩm định uy tín</p>
+                </div>
+                <a href="#" class="btn-card-action">Xem Đánh Giá</a>
+            </div>
+
+            <!-- Thẻ 2 -->
+            <div class="neon-card">
+                <div class="card-top">
+                    <h4 class="broker-name-large">XTB</h4>
+                    <div class="rating-badge">9.2 ★</div>
+                </div>
+                <div class="card-body">
+                    <p><strong>Loại hình:</strong> Sàn Ngoại Hối (Forex)</p>
+                    <p><strong>Đòn bẩy:</strong> 1:500</p>
+                    <p class="verified-tag">✓ Đã thẩm định uy tín</p>
+                </div>
+                <a href="#" class="btn-card-action">Xem Đánh Giá</a>
+            </div>
+
+            <!-- Thẻ 3 -->
+            <div class="neon-card">
+                <div class="card-top">
+                    <h4 class="broker-name-large">Exness</h4>
+                    <div class="rating-badge">8.9 ★</div>
+                </div>
+                <div class="card-body">
+                    <p><strong>Loại hình:</strong> Sàn Đa Tài Sản</p>
+                    <p><strong>Đòn bẩy:</strong> Không giới hạn</p>
+                    <p class="verified-tag">✓ Đã thẩm định uy tín</p>
+                </div>
+                <a href="#" class="btn-card-action">Xem Đánh Giá</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
