@@ -51,6 +51,10 @@ body {
     transition: 0.3s;
 }
 
+.navbar > nav {
+    min-width: 0;
+}
+
 .logo{
     display: inline-block;
     font-size: 24px !important;
@@ -126,6 +130,25 @@ body {
     justify-content: center;
     transition: 0.3s;
     margin-left: 0;
+}
+
+@media (max-width: 980px) {
+    .navbar {
+        grid-template-columns: auto 1fr auto;
+        padding: 15px 24px;
+    }
+
+    .navbar .theme-btn {
+        display: none;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links li a {
+        font-size: 15px;
+    }
 }
 
 .theme-btn:hover {
