@@ -14,7 +14,7 @@ if (savedTheme === 'dark') {
 document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector("#site-header");
     const isTopSan = window.location.pathname.includes("/topsan/");
-    const homeHref = isTopSan ? "../Trangchu.html" : "Trangchu.html";
+    const homeHref = isTopSan ? "../index.html" : "index.html";
     const tracuuHref = isTopSan ? "../tracuu.html" : "tracuu.html";
     const forexTopHref = isTopSan ? "Topsanforexuytin.html" : "topsan/Topsanforexuytin.html";
     const topicHref = isTopSan ? "../tracuu.html?category=" : "tracuu.html?category=";
